@@ -1,4 +1,4 @@
-package com.imrob.javaspringcrud.controllers.handlers;
+package com.imrob.javaspringcrud.controllers;
 
 import com.imrob.javaspringcrud.dto.ClientDTO;
 import com.imrob.javaspringcrud.services.ClientService;
