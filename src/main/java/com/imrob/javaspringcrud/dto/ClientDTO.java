@@ -1,14 +1,18 @@
 package com.imrob.javaspringcrud.dto;
 
 import com.imrob.javaspringcrud.entities.Client;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
 
 import java.time.LocalDate;
 
 public class ClientDTO {
     private Long id;
+    @NotBlank(message = "Campo obrigatório")
     private String name;
     private String cpf;
     private Double income;
+    @PastOrPresent(message = "Data nascimento não pode ser data futura")
     private LocalDate birthDate;
     private Integer children;
 
